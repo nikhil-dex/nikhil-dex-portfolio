@@ -275,9 +275,9 @@ const progress = useSectionProgress(gridRef, 0.2);
     </span>
 
    <h6 className="text-5xl md:text-8xl mt-8 leading-tight">
-        Building things you
+        Building things
         <br />
-        like.
+        you like.
     </h6>
 
     <p className="mt-6 max-w-xl">
