@@ -295,7 +295,8 @@ const onMove = (e) => {
                         </p>
 
                         <div className="space-y-3">
-                            <FooterLink href="https://drive.google.com/open?id=1vlX9VlZTDk9HKmBfdnxjzRi3XlCm61WL&usp=drive_fs">Resume</FooterLink>
+                            <FooterLink href="https://drive.google.com/open?id=1hcgEkfidrKMPddpO9T4vllw6bKM5wvKA&usp=drive_fs">Resume. Web dev</FooterLink>
+                            <FooterLink href="https://drive.google.com/open?id=1qGFHMeaemyQR6nO09NGuy_RmJ7Qmu2gf&usp=drive_fs">Resume. Data Analytics</FooterLink>
                             <FooterLink href="https://github.com/nikhil-dex">GitHub</FooterLink>
                             <FooterLink href="https://leetcode.com/u/nikhil-dex/">LeetCode</FooterLink>
                         </div>
