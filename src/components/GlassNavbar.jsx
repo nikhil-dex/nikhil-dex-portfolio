@@ -72,9 +72,21 @@ useEffect(() => {
     </div>
 ) : (
     <div className="flex gap-3">
-          <span className="font-medium">
+         <button
+            onClick={() =>
+                document
+                    .getElementById("Hero")
+                    .scrollIntoView({
+                        behavior: "smooth",
+                    })
+            }
+        >
+        <span className="font-medium">
                     Nikhil
                 </span>
+        </button>
+         
+                
         <button
             onClick={() =>
                 document
