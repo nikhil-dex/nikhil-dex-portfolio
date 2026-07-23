@@ -106,7 +106,7 @@ const smoothScrollTo = (targetId, duration = 2000) => {
 ) : (
     <div className="flex gap-3">
         
-        <button onClick={() => smoothScrollTo("Hero", 2000)}>
+        <button onClick={() => smoothScrollTo("Hero", 3000)}>
   <span className="font-medium">Nikhil</span>
 </button>
         
