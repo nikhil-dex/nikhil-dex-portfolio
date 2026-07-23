@@ -477,7 +477,7 @@ const cameraZ = kf(p, [
 ]);
 
   return (
-    <section ref={sectionRef} className="h-[450vh] relative cursor-none">
+    <section id="Hero" ref={sectionRef} className="h-[450vh] relative cursor-none">
        <CustomCursor containerRef={sectionRef} />
       <div className="sticky top-0 h-screen cursor-none">
       {/* GRID BACKGROUND — fade at bottom */}
