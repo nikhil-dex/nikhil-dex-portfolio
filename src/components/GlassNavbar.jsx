@@ -25,7 +25,12 @@ useEffect(() => {
     window.addEventListener("scroll", onScroll);
     onScroll();
     
-    const smoothScrollTo = (targetId, duration = 2000) => {
+    
+
+    return () => window.removeEventListener("scroll", onScroll);
+}, []);
+
+const smoothScrollTo = (targetId, duration = 2000) => {
   const target = document.getElementById(targetId);
   if (!target) return;
 
@@ -55,8 +60,6 @@ useEffect(() => {
   requestAnimationFrame(animation);
 };
 
-    return () => window.removeEventListener("scroll", onScroll);
-}, []);
     return (
         <div
             className={`
@@ -107,19 +110,7 @@ useEffect(() => {
   <span className="font-medium">Nikhil</span>
 </button>
         
-         <button
-            onClick={() =>
-                document
-                    .getElementById("Hero")
-                    .scrollIntoView({
-                        behavior: "smooth",
-                    })
-            }
-        >
-        <span className="font-medium">
-                    Nikhil
-                </span>
-        </button>
+       
          
                 
         <button
