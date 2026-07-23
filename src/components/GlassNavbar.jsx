@@ -24,6 +24,36 @@ useEffect(() => {
 
     window.addEventListener("scroll", onScroll);
     onScroll();
+    
+    const smoothScrollTo = (targetId, duration = 2000) => {
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+  const startPosition = window.scrollY;
+  const distance = targetPosition - startPosition;
+  let startTime = null;
+
+  const easeInOut = (t) =>
+    t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+  const animation = (currentTime) => {
+    if (!startTime) startTime = currentTime;
+
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    window.scrollTo({
+      top: startPosition + distance * easeInOut(progress),
+    });
+
+    if (progress < 1) {
+      requestAnimationFrame(animation);
+    }
+  };
+
+  requestAnimationFrame(animation);
+};
 
     return () => window.removeEventListener("scroll", onScroll);
 }, []);
@@ -72,6 +102,11 @@ useEffect(() => {
     </div>
 ) : (
     <div className="flex gap-3">
+        
+        <button onClick={() => smoothScrollTo("Hero", 2000)}>
+  <span className="font-medium">Nikhil</span>
+</button>
+        
          <button
             onClick={() =>
                 document
