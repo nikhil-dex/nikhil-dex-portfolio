@@ -73,7 +73,6 @@ const smoothScrollTo = (targetId, duration = 2000) => {
             `}
         >
             <div
-                onClick={()=> smoothScrollTo("Footer",5000)}
                 className="
                     px-6 py-3
                     rounded-full
@@ -84,10 +83,14 @@ const smoothScrollTo = (targetId, duration = 2000) => {
                     flex gap-6 items-center
                 "
             >
+            <button
+            onClick={()=> smoothScrollTo("Footer",5000)}
+            >
                 <img
                     src="/profile.jpg"
                     className="w-8 h-8 rounded-full"
                 />
+                </button>
 
               
 
