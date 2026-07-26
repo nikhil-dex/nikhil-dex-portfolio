@@ -85,7 +85,7 @@ const smoothScrollTo = (targetId, duration = 2000) => {
             >
            
                 <img
-                    onClick={()=> smoothScrollTo("Footer",5000)}
+                    onClick={()=> smoothScrollTo("footer",5000)}
                     src="/profile.jpg"
                     className="w-8 h-8 rounded-full"
                 />
