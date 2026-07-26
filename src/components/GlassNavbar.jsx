@@ -85,6 +85,8 @@ const smoothScrollTo = (targetId, duration = 2000) => {
             >
             <button
             onClick={()=> smoothScrollTo("Footer",5000)}
+            className="relative z-40 rounded-full focus:outline-none"
+            aria-label="Toggle socials"
             >
                 <img
                     src="/profile.jpg"
