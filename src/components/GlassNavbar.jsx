@@ -83,16 +83,13 @@ const smoothScrollTo = (targetId, duration = 2000) => {
                     flex gap-6 items-center
                 "
             >
-            <button
-            onClick={()=> smoothScrollTo("Footer",5000)}
-            className="relative z-40 rounded-full focus:outline-none"
-            aria-label="Toggle socials"
-            >
+           
                 <img
+                    onClick={()=> smoothScrollTo("Footer",5000)}
                     src="/profile.jpg"
                     className="w-8 h-8 rounded-full"
                 />
-                </button>
+                
 
               
 
