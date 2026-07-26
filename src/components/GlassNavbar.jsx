@@ -73,6 +73,7 @@ const smoothScrollTo = (targetId, duration = 2000) => {
             `}
         >
             <div
+                onClick={()=> smoothScrollTo("Footer",5000)}
                 className="
                     px-6 py-3
                     rounded-full
