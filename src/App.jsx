@@ -20,7 +20,7 @@ function App() {
   brand="airDeck_V1"
   items={[
     // { label: "Visit Airdeck", href: "https://airdeckv1.vercel.app" },
-    { label: "Go to Decks", href: "https://airdeckv2.vercel.app" }
+    { label: "Visit", href: "https://airdeckv2.vercel.app" }
   ]}
 />
       <Footer />

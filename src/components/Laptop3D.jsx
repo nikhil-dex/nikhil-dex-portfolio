@@ -8,7 +8,7 @@ import CustomCursor from './CustomCursor';
 import CoffeeMug from "./CoffeeMug";
 
 import { RoundedBox } from '@react-three/drei';
-
+import Title from './Hero/Title';
 
 const xRotate = {
     start: 0,
@@ -508,8 +508,19 @@ WebkitMaskComposite: 'source-in',
             transform: `translateY(${kf(progress, [[0, 0], [0.4, -120]])}vh)`,
           }}
         >
-          This is<br />Nikhil's portfolio
+                 <Title
+  as="h1"
+  loop={false}
+  className="absolute left-[8%] top-[22%] text-6xl font-display font-semibold z-10"
+  style={{
+    transform: `translateY(${kf(progress, [[0, 0], [0.4, -120]])}vh)`,
+  }}
+>
+  This is<br />Nikhil&apos;s portfolio
+</Title>
+          {/* This is<br />Nikhil's portfolio */}
         </h1>
+  
 
     
        <Canvas
