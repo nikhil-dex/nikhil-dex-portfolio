@@ -1,5 +1,6 @@
 // GlassNavbar.jsx
 import { useEffect, useState } from "react";
+import {motion} from "motion/react";
 
 export default function GlassNavbar() {
     const [visible, setVisible] = useState(false);
@@ -61,18 +62,28 @@ const smoothScrollTo = (targetId, duration = 2000) => {
 };
 
     return (
+        <>
         <div
+            // initial={{ opacity: 0, y: -20 }}
+            // animate={{ opacity: visible ? 1 : 0, y: visible ? 0 : -20 }}
+            // transition={{ duration: 0.5 }}
+            
             className={`
                 fixed top-6 left-1/2
                 -translate-x-1/2
                 z-50
+                
                 transition-all duration-700
                 ${visible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-10"}
             `}
         >
-            <div
+            <motion.div
+                drag
+                dragConstraints={{ left: -200, right: 200 ,top: 0, bottom: 0}}
+               
+
                 className="
                     px-6 py-3
                     rounded-full
@@ -141,7 +152,8 @@ const smoothScrollTo = (targetId, duration = 2000) => {
         </button>
     </div>
 )}
-            </div>
+            </motion.div>
         </div>
+        </>
     );
 }
