@@ -5,6 +5,8 @@ import Laptop3D from './components/Laptop3D'
 import GlassDock from './components/GlassDock'
 import GlassNavbar from './components/GlassNavbar'
 import Services from './components/Services'
+import Logovortex from './components/Logovortex'
+import GlitchNavbar from './components/GlitchNavbar'
 function App() {
   return (
    // App.jsx
@@ -13,6 +15,14 @@ function App() {
       <Projects />
       <About />
       <Services />
+      {/* <Logovortex /> */}
+    <GlitchNavbar
+  brand="airDeck_V1"
+  items={[
+    // { label: "Visit Airdeck", href: "https://airdeckv1.vercel.app" },
+    { label: "Go to Decks", href: "https://airdeckv2.vercel.app" }
+  ]}
+/>
       <Footer />
       <GlassNavbar />
       <GlassDock/>

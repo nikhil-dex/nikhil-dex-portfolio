@@ -15,7 +15,7 @@ const projects = [
     title: 'AirDeck',
     tag: 'Presentation Tool',
     img: '/AirDeck.png',
-    live: '#',
+    live: 'https://airdeckv1.vercel.app',
     code: 'https://github.com/nikhil-dex/YOUR_REPO',
   },
   {
