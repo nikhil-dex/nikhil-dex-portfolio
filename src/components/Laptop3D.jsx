@@ -511,7 +511,7 @@ WebkitMaskComposite: 'source-in',
 
   as="h1"
   loop={false}
-  className="absolute left-[8%] top-[22%] text-5xl font-display font-semibold z-10"
+  className="absolute left-[8%] top-[22%] text-4xl font-display font-semibold z-10"
   style={{
     transform: `translateY(${kf(progress, [[0, 0], [0.4, -120]])}vh)`,
   }}
