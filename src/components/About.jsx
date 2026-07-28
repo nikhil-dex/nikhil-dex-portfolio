@@ -2,6 +2,7 @@
 import { useRef, useEffect } from "react";
 import { SiGithub, SiReddit } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import {motion} from "motion/react";
 export default function About() {
     const imgWrapRef = useRef(null);
 const hoverAreaRef = useRef(null);
@@ -192,8 +193,13 @@ useEffect(() => {
     ref={hoverAreaRef}
     className="flex justify-center relative"
 >
-    <div ref={imgWrapRef} className="will-change-transform">
+    <motion.div
+    drag
+    whileTap={{ scale: 0.9 }}
+    
+     ref={imgWrapRef} className="will-change-transform">
         <img
+            
             src="/Nikhil.png"
             alt="Nikhil"
             className="
@@ -205,7 +211,7 @@ useEffect(() => {
                 filter: "drop-shadow(-20px 0 0 #070707) drop-shadow(0 40px 60px rgba(0,0,0,.15))",
             }}
         />
-    </div>
+    </motion.div>
 
   <div
     className="
@@ -219,10 +225,10 @@ useEffect(() => {
     "
 >
     <span
-        className="text-6xl font-bold"
+        className="text-6xl font-bold text-gray-900 group-hover:text-gray-600 transition duration-300"
         style={{
-            color: "transparent",
-            WebkitTextStroke: "1.5px rgba(0,0,0,0.15)",
+            // color: "transparent",
+            WebkitTextStroke: "1.5px rgba(255, 255, 255, 0.15)",
         }}
     >
         開発者
