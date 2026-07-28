@@ -118,7 +118,8 @@ export default function Title({
     <Tag
       ref={rootRef}
       className={className}
-      style={{ position: "relative", filter: `url(#${id}-displace)`, ...style }}
+      style={{ filter: `url(#${id}-displace)`, ...style }}
+    //   style={{ position: "relative", filter: `url(#${id}-displace)`, ...style }}
       onMouseEnter={onEnter}
       {...rest}
     >
