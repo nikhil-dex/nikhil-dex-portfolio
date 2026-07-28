@@ -508,7 +508,7 @@ WebkitMaskComposite: 'source-in',
             transform: `translateY(${kf(progress, [[0, 0], [0.4, -120]])}vh)`,
           }}
         >
-                 <Title
+               {/*  <Title
   as="h1"
   loop={false}
   className="absolute left-[8%] top-[22%] text-6xl font-display font-semibold z-10"
@@ -517,8 +517,8 @@ WebkitMaskComposite: 'source-in',
   }}
 >
   This is<br />Nikhil&apos;s portfolio
-</Title>
-          {/* This is<br />Nikhil's portfolio */}
+</Title> */}
+          This is<br />Nikhil's portfolio 
         </h1>
   
 
