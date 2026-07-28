@@ -82,7 +82,7 @@ const smoothScrollTo = (targetId, duration = 2000) => {
             <motion.div
                 drag
                 whileTap={{ scale: 0.95 }}
-                dragConstraints={{ left: -200, right: 200 ,top: 0, bottom: 0}}
+                dragConstraints={{ left: -125, right: 125 ,top: 0, bottom: 0}}
                
 
                 className="
