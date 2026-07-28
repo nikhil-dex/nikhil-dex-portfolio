@@ -79,9 +79,9 @@ const peeking = hovered || isTouch;
     >
       <motion.div
       drag
-      whileTap={{ scale: 0.95 }}
-      dragConstraints={{ left: 0, right: 0 ,top: 0, bottom: 0}}
-      
+
+      whileTap={{ scale: 0.8 }}
+      dragConstraints={{ left: -125, right: 125 ,top: 0, bottom: 0}}
         className="flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/25 shadow-lg"
         style={{
           background: 'rgba(255,255,255,0.25)',

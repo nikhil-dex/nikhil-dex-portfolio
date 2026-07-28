@@ -502,15 +502,13 @@ WebkitMaskComposite: 'source-in',
 
 
         {/* heading — 40% progress tak poori exit */}
-        {/*<h1
-          className="absolute left-[8%] top-[22%] text-6xl font-display font-semibold z-10"
-          style={{
-            transform: `translateY(${kf(progress, [[0, 0], [0.4, -120]])}vh)`,
-          }}
-        >
-          This is<br />Nikhil's portfolio 
-        </h1> */}
-     <Title
+
+   
+
+
+         
+    <Title
+
   as="h1"
   loop={false}
   className="absolute left-[8%] top-[22%] text-5xl font-display font-semibold z-10"
@@ -519,8 +517,9 @@ WebkitMaskComposite: 'source-in',
   }}
 >
   This is<br />Nikhil&apos;s portfolio
+
 </Title> 
-  
+
 
     
        <Canvas

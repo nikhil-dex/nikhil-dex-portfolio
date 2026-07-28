@@ -4,7 +4,10 @@
   font-family: 'Clash Display', sans-serif;
   color: black;
 }
-
+html, body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
 /* index.css */
 body {
   margin: 0;
